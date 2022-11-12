@@ -14,17 +14,12 @@ export const Header = () => {
       className={style.container}
       style={{
         background:
-          useLocation().pathname == "/" && isDark ? "transparent" : "white",
+          (useLocation().pathname == "/" || "/") && isDark ? "black" : "white",
       }}
     >
       <Container>
         <div className={style.dotood}>
-          <Link
-            to="/"
-            className={
-              useLocation().pathname == "/" && isDark ? style.logo : style.logo2
-            }
-          ></Link>
+          <Link to="/" className={isDark ? style.logo : style.logo2}></Link>
           <div className={style.links}>
             <Button
               onClick={toggleTheme}
@@ -34,51 +29,31 @@ export const Header = () => {
             </Button>
             <Link
               to="/products"
-              style={
-                useLocation().pathname == "/" && isDark
-                  ? { color: "white" }
-                  : { color: "black" }
-              }
+              style={isDark ? { color: "white" } : { color: "black" }}
             >
               Products
             </Link>
             <Link
               to="/services"
-              style={
-                useLocation().pathname == "/" && isDark
-                  ? { color: "white" }
-                  : { color: "black" }
-              }
+              style={isDark ? { color: "white" } : { color: "black" }}
             >
               Services
             </Link>
             <Link
               to="/contact"
-              style={
-                useLocation().pathname == "/" && isDark
-                  ? { color: "white" }
-                  : { color: "black" }
-              }
+              style={isDark ? { color: "white" } : { color: "black" }}
             >
               Contact
             </Link>
             <Link
               to="/login"
-              style={
-                useLocation().pathname == "/" && isDark
-                  ? { color: "white" }
-                  : { color: "black" }
-              }
+              style={isDark ? { color: "white" } : { color: "black" }}
             >
               Login
             </Link>
             <Link
               to="/getaccess"
-              className={
-                useLocation().pathname == "/" && isDark
-                  ? style.getacc
-                  : style.getacc2
-              }
+              className={isDark ? style.getacc : style.getacc2}
             >
               Get Access
             </Link>

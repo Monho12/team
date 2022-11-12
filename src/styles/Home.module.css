@@ -5,6 +5,7 @@
   background-image: url(/src//assets//backG.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100vw;
 }
 
 .textCont {
@@ -50,6 +51,7 @@
   /* border: 1px solid red; */
   position: relative;
   z-index: -100;
+  width: 100vw;
 }
 .text2 {
   font-size: 48px;
@@ -141,13 +143,6 @@
   right: 16%;
   top: 20%;
 }
-
-.word {
-  text-align: center;
-  padding: 10vh 0 0 0;
-  font-weight: bold;
-  font-size: 48px;
-}
 .slide {
   height: 100vh;
   display: flex;
@@ -167,27 +162,40 @@
   flex-direction: row;
   gap: 15px;
 }
-
-.container69 {
-  width: fit-content;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  z-index: 100;
-  /* padding: 0px 16px; */
-}
 .section69 {
-  position: relative;
   padding: 10vh;
   width: 100vw;
   overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+
+.container69 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 80vh;
+  gap: 14px;
+}
+.word {
+  text-align: center;
+  padding: 10px 0 0 0;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.btnCont {
+  position: relative;
+  top: 0;
 }
 
 .buttons {
   position: absolute;
-  bottom: 10%;
+  bottom: 100%;
   right: 10%;
-
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10%;
+  z-index: 100;
 }

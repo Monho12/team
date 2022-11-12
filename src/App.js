@@ -24,6 +24,11 @@ const data = {
     "Give everyone you work with—inside and outside your company—a more productive way to stay in sync. Respond faster with emoji, keep conversations focused in channels, and simplify all your communication into one place.",
 };
 
+const data2 = {
+  text: "Blog posts",
+  desc: "Our latest updates and blogs about managing your team",
+};
+
 function App() {
   return (
     <ThemeProvider>
@@ -31,7 +36,7 @@ function App() {
         <Header />
         <Routes>
           <Route index element={<Home {...data} />} />
-          <Route path="/products" element={<Products />} />
+          <Route path="/products" element={<Products {...data2} />} />
         </Routes>
         <Footer />
       </BrowserRouter>

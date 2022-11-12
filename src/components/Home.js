@@ -166,15 +166,10 @@ export const Home = (props) => {
         <Container>
           <div
             className={style.container69}
-            style={
-              (isDark
-                ? { backgroundColor: "black" }
-                : { backgroundColor: "white" },
-              {
-                transform: `translateX(${-10 * index}%)`,
-                transition: "300ms",
-              })
-            }
+            style={{
+              transform: `translateX(${-10 * index}%)`,
+              transition: "300ms",
+            }}
           >
             {backs.map(({ text, name, star }, index) => {
               return (
@@ -188,11 +183,13 @@ export const Home = (props) => {
               );
             })}
           </div>
-          <div className={style.buttons}>
-            <Button onClick={goLeft}>Left</Button>
-            <Button onClick={goRight}>Right</Button>
-          </div>
         </Container>
+      </div>
+      <div className={style.btnCont}>
+        <div className={style.buttons}>
+          <Button onClick={goLeft}>Left</Button>
+          <Button onClick={goRight}>Right</Button>
+        </div>
       </div>
     </div>
   );

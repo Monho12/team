@@ -17,7 +17,10 @@ export const Review = (props) => {
     <div
       className={styles.Container}
       style={
-        isDark ? { backgroundColor: "white" } : { backgroundColor: "black" }
+        isDark
+          ? {
+              backgroundColor: "black", boxShadow : "0px 0px 60px 5px rgba(187, 187, 187, 0.75)"}
+          : { backgroundColor: "white" }
       }
     >
       <div className={styles.stars}>
@@ -28,14 +31,14 @@ export const Review = (props) => {
       <div className={styles.t}>
         <div
           className={styles.text}
-          style={isDark ? { color: "black" } : { color: "white" }}
+          style={isDark ? { color: "white" } : { color: "black" }}
         >
           {props.text}
         </div>
       </div>
       <div className={styles.profile}>
         <img src={props.img}></img>
-        <h4  style={isDark ? { color: "black" } : { color: "white" }}>
+        <h4 style={isDark ? { color: "white" } : { color: "black" }}>
           {props.name}
         </h4>
       </div>

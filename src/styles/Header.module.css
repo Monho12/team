@@ -1,0 +1,57 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* border: 1px solid red; */
+  background-color: fill color;
+}
+
+.dotood {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  background-image: url(/src/assets/team..svg);
+  background-size: cover;
+  background-repeat: none;
+  min-width: 12vh;
+  height: 3vh;
+}
+.logo2 {
+  background-image: url(/src/assets/teamBl..svg);
+  background-size: cover;
+  background-repeat: none;
+  min-width: 12vh;
+  height: 3vh;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  min-width: fit-content;
+  font-size: 20px;
+  margin-top: 1%;
+}
+
+.getacc {
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  padding: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.52;
+}
+
+.getacc2 {
+  border: 2px solid rgba(77, 160, 253, 0.42);
+  border-radius: 4px;
+  color: #4da0fd;
+  background-color: rgba(61, 150, 252, 0.1);
+  padding: 15px;
+  text-decoration: none;
+  opacity: 0.52;
+}

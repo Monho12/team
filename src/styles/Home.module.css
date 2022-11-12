@@ -1,0 +1,193 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(/src//assets//backG.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.textCont {
+  width: 20vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+.text {
+  font-size: 48px;
+}
+.desc {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.input {
+  min-width: 15vw;
+  height: 6vh;
+}
+.button {
+  min-width: 9vw;
+  height: 6vh;
+  align-items: center;
+  border: none;
+  background-color: #0bbef2;
+}
+
+.inpB {
+  display: flex;
+  gap: 2vh;
+  width: 25vw;
+  margin-top: 3%;
+}
+
+.container2,
+.container3,
+.container4 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  position: relative;
+  z-index: -100;
+}
+.text2 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.desc2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.textCont2 {
+  width: 21vw;
+  color: black;
+  display: flex;
+  margin-top: 7%;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.image {
+  background-image: url(../assets//meeting.png);
+  background-size: cover;
+  height: 70vh;
+  min-width: 30vw;
+  position: absolute;
+  right: 16%;
+  top: 20%;
+}
+
+.not {
+  position: absolute;
+  top: 27%;
+  right: 38%;
+  width: 273px;
+  height: 160px;
+  border-radius: 6px;
+  border: none;
+  background-image: url(../assets//not.png);
+  background-size: cover;
+}
+.ring {
+  background-image: url(../assets//honh.png);
+  background-size: cover;
+  position: absolute;
+  bottom: 12%;
+  right: 41.5%;
+  width: 120px;
+  height: 120px;
+}
+
+.sched {
+  background-image: url(../assets//sched.png);
+  background-size: cover;
+  position: absolute;
+  top: 19%;
+  right: 23%;
+  width: 120px;
+  height: 120px;
+}
+
+.image2 {
+  background-image: url(/src/assets/ajima.svg);
+  background-size: cover;
+  height: 70vh;
+  width: 35vw;
+  display: flex;
+  margin-top: 7%;
+}
+
+.textCont3 {
+  width: 21vw;
+  color: black;
+  display: flex;
+  position: absolute;
+  right: 16%;
+  top: 20%;
+  margin-top: 7%;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.image3 {
+  background-image: url(/src/assets/ahhuu.svg);
+  background-size: cover;
+  height: 70vh;
+  width: 35vw;
+  position: absolute;
+  right: 16%;
+  top: 20%;
+}
+
+.word {
+  text-align: center;
+  padding: 10vh 0 0 0;
+  font-weight: bold;
+  font-size: 48px;
+}
+.slide {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  overflow: scroll;
+}
+
+.rightLeft {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 100px;
+  bottom: 170px;
+  justify-content: center;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.container69 {
+  width: fit-content;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  z-index: 100;
+  /* padding: 0px 16px; */
+}
+.section69 {
+  position: relative;
+  padding: 10vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+
+}

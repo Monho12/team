@@ -1,0 +1,19 @@
+.container {
+  height: 100vh;
+  display: flex;
+  height:380vh;
+  align-items: center;
+  margin-top: 15vh;
+  /* justify-content: space-between; */
+}
+.column {
+  /* border: 1px solid red; */
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: 36% 36% 36%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}

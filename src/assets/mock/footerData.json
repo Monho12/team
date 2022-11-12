@@ -1,0 +1,16 @@
+{
+  "links": [
+    {
+      "name": "facebook",
+      "icon": ""
+    },
+    {
+      "name": "instagram",
+      "icon": ""
+    },
+    {
+      "name": "twitter",
+      "icon": ""
+    }
+  ]
+}

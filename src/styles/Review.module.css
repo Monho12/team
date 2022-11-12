@@ -1,0 +1,53 @@
+.Container {
+  width: 360px;
+  height: 365px;
+  box-shadow: 0px 0px 30px -9px rgba(0, 0, 0, 0.75);
+  margin-left: 16px;
+}
+
+.stars {
+  width: fit-content;
+  /* border: 1px solid red; */
+  padding: 30px 0 20px 35px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+.shar0 {
+  color: grey;
+}
+
+.shar1 {
+  color: #ffbb00;
+}
+
+.t {
+  /* border: 1px solid grey; */
+  width: 290px;
+  height: fit-content;
+}
+
+.profile {
+  display: flex;
+  gap: 15px;
+  padding: 40px 0 0 30px;
+  left: 30px;
+  bottom: 40px;
+  align-items: center;
+}
+
+img {
+  width: 56px;
+  height: 56px;
+}
+
+.text {
+  display: wrap;
+  max-width: 90%;
+  font-size: 17px;
+  padding-left: 35px;
+  text-align: left;
+  font-weight: 500;
+  line-height: 160%;
+}

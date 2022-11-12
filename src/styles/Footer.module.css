@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  width: 100vw;
+  background-color: #252b3b;
+  padding: 48px 0px;
+  z-index: -100;
+}
+.dotood {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}

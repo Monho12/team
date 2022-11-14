@@ -6,7 +6,6 @@ import style from "../styles/Products.module.css";
 import { useState, useEffect } from "react";
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeProvider";
-import { propTypes } from "react-bootstrap/esm/Image";
 
 export const Products = (props) => {
   const { isDark, toggleTheme } = useContext(ThemeContext);
@@ -53,8 +52,8 @@ export const Products = (props) => {
           <div className={style.desc}>{props.desc}</div>
         </div>
         <div className={style.column}>
-          {/* {!data && <Spinner />} */}
-          {data && data.data.map((item) => <Cord {...item} />)}
+          {!data && <Spinner />}
+          {data && data.data.map((item) => <Cord {...item} key={item}/>)}
         </div>
         <div className={style.button}>
           <Button variant="dark" className={style.btn}>

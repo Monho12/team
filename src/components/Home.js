@@ -1,4 +1,4 @@
-import { Button, Container, Spinner } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import style from "../styles/Home.module.css";
 import { ThemeContext } from "./ThemeProvider";
@@ -6,12 +6,10 @@ import { useContext, useEffect, useState } from "react";
 import backs from "./feedbacks.json";
 import { Review } from "./Review";
 import img from "../assets/unknown.png";
-import axios from "axios";
 
 export const Home = (props) => {
   const { isDark, toggleTheme } = useContext(ThemeContext);
   const [index, setIndex] = useState(0);
-  const [data, setData] = useState(null);
 
   const goRight = () => {
     if (index < 9) {
@@ -23,24 +21,6 @@ export const Home = (props) => {
       setIndex((prev) => prev - 1);
     }
   };
-
-  const baseUrl = "https://dummyapi.io/data/v1/";
-
-  useEffect(() => {
-    axios
-      .get(baseUrl + "post", {
-        headers: {
-          "app-id": "636f2fbfe8d0ff0d223fc543",
-        },
-      })
-      .then((res) => {
-        setData(res.data);
-        console.log(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
 
   return (
     <div>

@@ -7,19 +7,20 @@
 }
 .column {
   margin-top: 5vh;
-  display: grid;
-  grid-template-columns: 36% 36% 36%;
+  display: flex;
+  gap: 5vw;
+  flex-wrap: wrap;
 }
 
 .button {
   display: flex;
   justify-content: center;
-  margin-bottom: 5%;
+  margin: 5% 5%;
 }
 .btn {
   padding: 0 3vw 0 3vw;
-  color: #465058;
-  background-color: #6d7d8b88;
+  color: #232a31;
+  background-color: #8896a188;
   border: none;
   height: 5vh;
 }

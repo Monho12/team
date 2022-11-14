@@ -1,5 +1,6 @@
 import { Button, Container } from "react-bootstrap";
 import style from "../styles/Footer.module.css";
+import data from "../assets/mock/footerData.json";
 
 export const Footer = () => {
   return (
@@ -7,33 +8,33 @@ export const Footer = () => {
       <Container>
         <div className={style.dotood}>
           <div>
-            {new Array(6).fill(0).map(() => (
-              <p>Facebook</p>
+            <div className={style.logo} />
+            {data.links.map((props) => (
+              <p>{props.name}</p>
             ))}
           </div>
           <div>
-            {new Array(6).fill(0).map(() => (
-              <p>Facebook</p>
+            <div style={{ marginBottom: "4vh" }}>Use cases</div>
+            {data.cases.map((props) => (
+              <p>{props.name}</p>
             ))}
           </div>
           <div>
-            {new Array(6).fill(0).map(() => (
-              <p>Facebook</p>
+            <div style={{ marginBottom: "4vh" }}>Explore</div>
+            {data.explore.map((props) => (
+              <p>{props.name}</p>
             ))}
           </div>
           <div>
-            {new Array(6).fill(0).map(() => (
-              <p>Facebook</p>
+            <div style={{ marginBottom: "4vh" }}>Resources</div>
+            {data.resources.map((props) => (
+              <p>{props.name}</p>
             ))}
           </div>
           <div>
             <h4>Subscribe to our newsletter</h4>
-
-            <Button
-              variant="light"
-              style={{ color: "#4DA0FD", border: "none" }}
-            >
-              Subscribe
+            <Button className={style.button} size="lg" variant="light">
+              Email
             </Button>
           </div>
         </div>

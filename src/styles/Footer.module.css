@@ -10,3 +10,27 @@
   justify-content: space-between;
   color: white;
 }
+
+.logo {
+  background-image: url(/src/assets/team..svg);
+  background-size: cover;
+  background-repeat: none;
+  width: 5vw;
+  height: 1.3vw;
+  margin-bottom: 4vh;
+}
+
+p {
+  font-size: 14px;
+}
+
+.button {
+  width: 100%;
+  margin-top: 24px;
+  text-align: left;
+  color: #4da0fd;
+  border-radius: 0;
+}
+.button:hover {
+  color: #4da0fd;
+}

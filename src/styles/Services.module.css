@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  margin-top: 10vh;
+  height: fit-content;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.txtCont {
+  text-align: center;
+}
+
+.txt {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.crowd {
+  background-image: url(../assets/crowd.svg);
+  background-repeat: none;
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+}

@@ -7,6 +7,7 @@ import not from "../src/assets/not.png";
 import { ThemeProvider } from "./components/ThemeProvider";
 import { Footer } from "./components/Footer";
 import { Products } from "./components/Products";
+import { Services } from "./components/Services";
 
 const data = {
   img: image,
@@ -29,6 +30,10 @@ const data2 = {
   desc: "Our latest updates and blogs about managing your team",
 };
 
+const data3 = {
+  text : "10 Secrets for managing a remote team"
+}
+
 function App() {
   return (
     <ThemeProvider>
@@ -37,6 +42,7 @@ function App() {
         <Routes>
           <Route index element={<Home {...data} />} />
           <Route path="/products" element={<Products {...data2} />} />
+          <Route path="/services" element={<Services {...data3} />} />
         </Routes>
         <Footer />
       </BrowserRouter>

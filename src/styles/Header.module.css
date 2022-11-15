@@ -3,7 +3,18 @@
   top: 0;
   left: 0;
   width: 100%;
+  transition: 500ms;
+  background-color: #252b3b;
   /* border: 1px solid red; */
+}
+
+.containerB {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: 500ms;
 }
 
 .dotood {
@@ -53,4 +64,14 @@
   padding: 15px;
   text-decoration: none;
   opacity: 0.52;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid;
+  
+}
+Button:hover {
+  background-color: transparent;
+  border: rgb(199, 22, 22);
 }

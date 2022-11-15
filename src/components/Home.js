@@ -65,10 +65,11 @@ export const Home = (props) => {
             <Link to="/learnmore" style={{ color: "#4DA0FD" }}>
               Learn more
             </Link>
-            <div className={style.image}></div>
-            <div className={style.not}></div>
-            <div className={style.ring}></div>
-            <div className={style.sched}></div>
+            <div className={style.image}>
+              <div className={style.not}></div>
+              <div className={style.ring}></div>
+              <div className={style.sched}></div>
+            </div>
           </div>
         </Container>
       </div>

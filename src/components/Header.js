@@ -2,58 +2,57 @@ import { Container, Button } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
 import { ThemeContext } from "./ThemeProvider";
 import style from "../styles/Header.module.css";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 export const Header = () => {
+  window.addEventListener("scroll", setFix);
+  const [backG, setBackG] = useState(false);
+
+  function setFix() {
+    if (window.scrollY <= 0) {
+      setBackG(false);
+    } else {
+      setBackG(true);
+    }
+  }
   const { isDark, toggleTheme } = useContext(ThemeContext);
 
-  console.log(isDark);
-
+  window.addEventListener("scroll", setFix);
   return (
-    <div
-      className={style.container}
-      style={{
-        background:
-          (useLocation().pathname == "/" || "/") && isDark ? "black" : "white",
-      }}
-    >
+    <div className={(useLocation().pathname === "/" || "/") && backG ? style.container : style.containerB}>
+      
       <Container>
         <div className={style.dotood}>
-          <Link to="/" className={isDark ? style.logo : style.logo2}></Link>
+          <Link to="/" className={useLocation().pathname === "/" || backG || isDark ? style.logo : style.logo2}></Link>
           <div className={style.links}>
-            <Button
-              onClick={toggleTheme}
-              // className={useLocation().pathname != "/" ? style.btn2 : style.btn}
-            >
-              {isDark ? "Light" : "Dark"}
-            </Button>
+            <Button onClick={toggleTheme} className={style.btn}>{isDark ? "☀️" : "🌙"}</Button>
             <Link
               to="/products"
-              style={isDark ? { color: "white" } : { color: "black" }}
+              style={ useLocation().pathname === "/" || backG || isDark ? {color: "white" } : { color: "black" }}
             >
-              Products
+              Blogs
             </Link>
             <Link
               to="/services"
-              style={isDark ? { color: "white" } : { color: "black" }}
+              style={useLocation().pathname === "/" || backG || isDark ? {color: "white" } : { color: "black" }}
             >
               Services
             </Link>
             <Link
               to="/contact"
-              style={isDark ? { color: "white" } : { color: "black" }}
+              style={useLocation().pathname === "/" || backG || isDark ? {color: "white" } : { color: "black" }}
             >
               Contact
             </Link>
             <Link
               to="/login"
-              style={isDark ? { color: "white" } : { color: "black" }}
+              style={useLocation().pathname === "/" || backG || isDark ? {color: "white" } : { color: "black" }}
             >
               Login
             </Link>
             <Link
               to="/getaccess"
-              className={isDark ? style.getacc : style.getacc2}
+              className={ useLocation().pathname === "/" || backG || isDark ? style.getacc : style.getacc2}
             >
               Get Access
             </Link>

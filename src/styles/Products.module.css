@@ -1,14 +1,18 @@
 .container {
   display: flex;
-  margin-top: 10vh;
   width: 100vw;
+  height: fit-content;
   flex-direction: column;
   /* justify-content: space-between; */
+}
+
+.cont {
+  margin-top: 10vh;
 }
 .column {
   margin-top: 5vh;
   display: flex;
-  gap: 5vw;
+  gap: 4vw;
   flex-wrap: wrap;
 }
 
@@ -16,12 +20,14 @@
   display: flex;
   justify-content: center;
   margin: 5% 5%;
+  gap: 1vw; 
 }
 .btn {
   padding: 0 3vw 0 3vw;
   color: #232a31;
   background-color: #8896a188;
   border: none;
+  /* width: 5vw; */
   height: 5vh;
 }
 

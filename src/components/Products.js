@@ -8,7 +8,21 @@ import { useContext } from "react";
 import { ThemeContext } from "./ThemeProvider";
 
 export const Products = (props) => {
-  const { isDark, toggleTheme } = useContext(ThemeContext);
+  const { isDark } = useContext(ThemeContext);
+
+  const [page , setPage] = useState(0);
+  const [limit , setlimit] = useState(9);
+
+  const nextPage = () => {
+    setData(null);
+    setPage((prev)=> prev + 1)
+  };
+  const prevPage = () => {
+    setData(null);
+    setPage((prev)=> {
+      if(prev > 0) return prev -1;
+    })
+  }
 
   console.log(isDark);
   const [data, setData] = useState(null);
@@ -16,7 +30,7 @@ export const Products = (props) => {
 
   useEffect(() => {
     axios
-      .get(baseUrl + "post", {
+      .get(baseUrl + `post?limit=${limit}&page=${page}`, {
         headers: {
           "app-id": "636f2fbfe8d0ff0d223fc543",
         },
@@ -28,20 +42,16 @@ export const Products = (props) => {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [page , limit]);
 
   return (
     <div
       className={style.container}
       style={
-        isDark
-          ? {
-              backgroundColor: "black",
-            }
-          : { backgroundColor: "white" }
+        isDark ? { backgroundColor: "black" } : { backgroundColor: "white" }
       }
     >
-      <Container>
+      <Container className={style.cont}>
         <div className={style.textCont}>
           <div
             className={style.text}
@@ -53,10 +63,13 @@ export const Products = (props) => {
         </div>
         <div className={style.column}>
           {!data && <Spinner />}
-          {data && data.data.map((item) => <Cord {...item} key={item}/>)}
+          {data && data.data.map((item) => <Cord {...item} />)}
         </div>
         <div className={style.button}>
-          <Button variant="dark" className={style.btn}>
+        <Button variant="dark" className={style.btn} onClick={prevPage}>
+            Prev
+          </Button>
+          <Button variant="dark" className={style.btn} onClick={nextPage}>
             Next
           </Button>
         </div>

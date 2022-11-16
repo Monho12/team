@@ -3,6 +3,7 @@
   width: 100vw;
   height: fit-content;
   flex-direction: column;
+  transition: 500ms;
   /* justify-content: space-between; */
 }
 
@@ -29,6 +30,16 @@
   border: none;
   /* width: 5vw; */
   height: 5vh;
+  opacity: 1;
+}
+.btn2 {
+  padding: 0 3vw 0 3vw;
+  color: #232a31;
+  background-color: #8896a188;
+  border: none;
+  /* width: 5vw; */
+  height: 5vh;
+  opacity: 0;
 }
 
 .textCont {

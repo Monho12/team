@@ -4,3 +4,6 @@ export * from "./ThemeProvider";
 export * from "./Footer";
 export * from "./Services";
 export * from "./SmallFoot";
+export * from "./Contact";
+export * from "./Login";
+export * from "./Getaccess";

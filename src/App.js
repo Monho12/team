@@ -8,6 +8,7 @@ import { ThemeProvider } from "./components/ThemeProvider";
 import { Footer } from "./components/Footer";
 import { Products } from "./components/Products";
 import { Services } from "./components/Services";
+import { Contact, Getaccess, Login } from "./components";
 
 const data = {
   img: image,
@@ -31,8 +32,8 @@ const data2 = {
 };
 
 const data3 = {
-  text : "10 Secrets for managing a remote team"
-}
+  text: "10 Secrets for managing a remote team",
+};
 
 function App() {
   return (
@@ -43,6 +44,9 @@ function App() {
           <Route index element={<Home {...data} />} />
           <Route path="/products" element={<Products {...data2} />} />
           <Route path="/services" element={<Services {...data3} />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/getaccess" element={<Getaccess />} />
         </Routes>
         <Footer />
       </BrowserRouter>

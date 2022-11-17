@@ -15,8 +15,8 @@
   background-image: url(/src/assets/team..svg);
   background-size: cover;
   background-repeat: none;
-  width: 5vw;
-  height: 1.3vw;
+  min-width: 9vw;
+  height: 2.5vh;
   margin-bottom: 4vh;
 }
 

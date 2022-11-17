@@ -59,8 +59,8 @@
 .getacc2 {
   border: 2px solid rgba(77, 160, 253, 0.42);
   border-radius: 4px;
-  color: #4da0fd;
-  background-color: rgba(61, 150, 252, 0.1);
+  /* color: #4da0fd; */
+  /* background-color: rgba(61, 150, 252, 0.1); */
   padding: 15px;
   text-decoration: none;
   opacity: 0.52;
@@ -69,9 +69,4 @@
 .btn {
   background-color: transparent;
   border: 1px solid;
-  
-}
-Button:hover {
-  background-color: transparent;
-  border: rgb(199, 22, 22);
 }

@@ -1,42 +1,25 @@
-import { Container, Spinner } from "react-bootstrap";
 import style from "../styles/Services.module.css";
-import axios from "axios";
-import { useEffect, useState } from "react";
-import { SmallFoot } from "./SmallFoot";
+import { Container } from "react-bootstrap";
+import { useContext } from "react";
+import { ThemeContext } from "./ThemeProvider";
 
 export const Services = (props) => {
-  const [data, setData] = useState(null);
-  const baseUrl = "https://dummyapi.io/data/v1/";
-
-  useEffect(() => {
-    axios
-      .get(baseUrl + "post?limit=1&psge=0", {
-        headers: {
-          "app-id": "636f2fbfe8d0ff0d223fc543",
-        },
-      })
-      .then((res) => {
-        setData(res.data);
-        console.log(res.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  }, []);
-
+  const { isDark } = useContext(ThemeContext);
   return (
-    <div className={style.container}>
-      <Container>
-        <div className={style.txtCont}>
-          <div className={style.txt}>{props.text}</div>
-          <div>
-            {!data && <Spinner />}
-            {data && data.data.map((item) => <SmallFoot {...item} />)}
-          </div>
+    <div className={style.container} style={{ background: isDark ? "black" : "white" }}>
+      <Container className={style.cont}>
+        <div className={style.txt} style={{ color: isDark ? "white" : "black" }}>
+          {props.text}
         </div>
-        {/* <div>
-            <div className={style.crowd}></div>
-        </div> */}
+        <div className={style.footer}>
+          <img src={props.img} className={style.profile} />
+          <div className={style.name}>{props.name}</div>
+          <div className={style.vl}></div>
+          <h5 className={style.date}>{props.date}</h5>
+        </div>
+        <div className={style.imgCont}>
+            <div className={style.image}></div>
+        </div>
       </Container>
     </div>
   );

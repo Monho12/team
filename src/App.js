@@ -3,8 +3,11 @@ import { Header } from "./components/Header";
 import { Home } from "./components/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import image from "../src/assets/meeting.png";
+import img from "../src/assets/speed.jpeg"
+import img1 from "../src/assets/crowd.svg"
 import not from "../src/assets/not.png";
 import { ThemeProvider } from "./components/ThemeProvider";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import { Footer } from "./components/Footer";
 import { Products } from "./components/Products";
 import { Services } from "./components/Services";
@@ -33,6 +36,10 @@ const data2 = {
 
 const data3 = {
   text: "10 Secrets for managing a remote team",
+  name: "Darren Watkins Jr",
+  date : "2nd january,2022",
+  img: img,
+  image : img1
 };
 
 function App() {

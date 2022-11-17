@@ -1,4 +1,4 @@
-import { Button, Container } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import style from "../styles/Home.module.css";
 import { ThemeContext } from "./ThemeProvider";
@@ -12,7 +12,7 @@ export const Home = (props) => {
   const [index, setIndex] = useState(0);
 
   const goRight = () => {
-    if (index < 9) {
+    if (index < 7) {
       setIndex((index) => index + 1);
     }
   };
@@ -42,6 +42,7 @@ export const Home = (props) => {
           </div>
         </Container>
       </div>
+
       <div
         className={style.container2}
         style={

@@ -38,9 +38,9 @@ export const Review = (props) => {
       </div>
       <div className={styles.profile}>
         <img src={props.img}></img>
-        <h4 style={isDark ? { color: "white" } : { color: "black" }}>
+        <div style={isDark ? { color: "white" } : { color: "black" }}>
           {props.name}
-        </h4>
+        </div>
       </div>
     </div>
   );

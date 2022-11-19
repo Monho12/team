@@ -1,8 +1,10 @@
 .Container {
   width: 360px;
-  height: fit-content;
+  height: 350px;
   box-shadow: 0px 0px 30px -9px rgba(0, 0, 0, 0.75);
   margin-left: 16px;
+  position: relative;
+  /* flex-wrap: wrap; */
 }
 
 .stars {
@@ -24,17 +26,20 @@
 
 .t {
   /* border: 1px solid grey; */
-  width: 290px;
+  /* width: 290px; */
   height: fit-content;
 }
 
 .profile {
   display: flex;
   gap: 15px;
-  padding: 40px 0 20px 30px;
-  left: 30px;
-  bottom: 40px;
+  /* margin: 15vh 0 2vh 35px; */
   align-items: center;
+  position: absolute;
+  bottom: 3vh;
+  left: 2vw;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 img {
@@ -45,7 +50,7 @@ img {
 .text {
   display: wrap;
   max-width: 90%;
-  font-size: 17px;
+  font-size: 18px;
   padding-left: 35px;
   text-align: left;
   font-weight: 500;

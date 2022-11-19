@@ -15,8 +15,8 @@
   background-image: url(/src/assets/team..svg);
   background-size: cover;
   background-repeat: none;
-  min-width: 9vw;
-  height: 2.5vh;
+  width: 5vw;
+  height: 1.3vw;
   margin-bottom: 4vh;
 }
 
@@ -28,9 +28,15 @@ p {
   width: 100%;
   margin-top: 24px;
   text-align: left;
-  color: #4da0fd;
   border-radius: 0;
+  width: 297px;
+  height: 56px;
+  border: none;
+  outline: none;
 }
-.button:hover {
+
+.button::placeholder {
+  padding: 10px;
+  font-weight: 500;
   color: #4da0fd;
 }

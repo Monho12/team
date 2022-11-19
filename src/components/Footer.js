@@ -33,10 +33,8 @@ export const Footer = () => {
             ))}
           </div>
           <div>
-            <h4>Subscribe to our newsletter</h4>
-            <Button className={style.button} size="lg" variant="light">
-              Email
-            </Button>
+            <h5>Subscribe to our newsletter</h5>
+            <input className={style.button} type="type" placeholder="Email" />
           </div>
         </div>
       </Container>

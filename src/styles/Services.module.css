@@ -18,7 +18,7 @@
 }
 
 .imgCont {
-  border: 1px solid;
+  /* border: 1px solid; */
   width: 100%;
   height: fit-content;
   margin-bottom: 5%;
@@ -36,12 +36,11 @@
   display: flex;
   gap: 1vw;
   align-items: center;
-  width: 17vw;
   margin: 0 0 5vh 17%;
 }
 .profile {
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
 }
 .name {
@@ -62,3 +61,57 @@
   font-size: 12px;
   font-weight: 400;
 }
+
+.tCont {
+  font-size: 18px;
+  font-weight: 500;
+  width: 700px;
+  margin: 0 auto 5% auto;
+}
+
+.footer1 {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  margin: 0 0 5vh 23%;
+}
+
+.name1 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.name2 {
+  font-size: 12px;
+  font-weight: 500;
+}
+.name3 {
+  font-weight: 400;
+  color: grey;
+  font-size: 12px;
+}
+.tCont1 {
+  font-size: 18px;
+  font-weight: 500;
+  width: 700px;
+  display: flex;
+  margin: 0 auto 5% auto;
+}
+.line {
+  width: 55%;
+  text-align: left;
+  margin: 0 auto 5% auto;
+}
+.join {
+  margin: 0 auto 1% auto;
+  font-size: 24px;
+  width: 55%;
+  font-weight: 400;
+  color: grey;
+}
+.input {
+  width: 630px;
+  height: 148px;
+  margin-left: 10px;
+}
+
+

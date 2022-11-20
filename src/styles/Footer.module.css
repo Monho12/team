@@ -40,3 +40,9 @@ p {
   font-weight: 500;
   color: #4da0fd;
 }
+
+@media screen and (max-width: 576px) {
+  .button {
+    width: 40vw;
+  }
+}

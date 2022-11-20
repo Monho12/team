@@ -33,6 +33,7 @@ export const Header = () => {
             }
           ></Link>
           <div className={style.links}>
+            {/* <Button onClick={toggleTheme} className={style.btn}>{isDark ? "☀️" : "🌙"}</Button> */}
             <div class="form-check form-switch">
               <input
                 class="form-check-input"

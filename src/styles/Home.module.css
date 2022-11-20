@@ -1,9 +1,5 @@
-/* * {
-  transition: 500ms;
-} */
-
 .container {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   background-image: url(/src//assets//backG.jpg);
@@ -33,7 +29,7 @@
   height: 6vh;
 }
 .button {
-  min-width: 9vw;
+  width: 9vw;
   height: 6vh;
   align-items: center;
   border: none;
@@ -57,7 +53,6 @@
   position: relative;
   z-index: -100;
   width: 100vw;
-  transition: 500ms;
 }
 .text2 {
   font-size: 48px;
@@ -140,6 +135,11 @@
   gap: 5vh;
 }
 
+.text3 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
 .image3 {
   background-image: url(/src/assets/ahhuu.svg);
   background-size: cover;
@@ -205,17 +205,296 @@
   margin-bottom: 10%;
   z-index: 100;
 }
+@media screen and (max-width: 1400px) {
+  .textCont {
+    width: 30vw;
+  }
+  .text {
+    font-size: 44px;
+  }
+  .input {
+    width: 60%;
+  }
+  .button {
+    width: 40%;
+  }
+  .inpB {
+    width: 35%;
+  }
+  .text2 {
+    font-size: 44px;
+  }
+  .desc2 {
+    font-size: 14px;
+  }
 
-@media only screen and (max-width: 780px) {
-  /* For mobile phones: */
+  .textCont2 {
+    width: 26vw;
+  }
+  .image {
+    width: 20vw;
+    right: 10vw;
+    top: 25vh;
+  }
+  .image2 {
+    width: 40vw;
+  }
 
-  .container {
-    width: 100vw;
+  .textCont3 {
+    margin-left: 85px;
+    width: 30vw;
+    right: 10%;
+    top: 26%;
+  }
+  .image3 {
+    height: 50vh;
+    width: 35vw;
+    right: 10vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .textCont {
+    width: 40vw;
+  }
+  .text {
+    font-size: 44px;
+  }
+  .desc {
+    font-size: 16px;
+  }
+  .input {
+    width: 60%;
+  }
+  .button {
+    width: 40%;
+  }
+  .inpB {
+    width: 45%;
+  }
+  .text2 {
+    font-size: 42px;
+  }
+
+  .desc2 {
+    font-size: 14px;
+  }
+
+  .textCont2 {
+    width: 31vw;
+  }
+  .image {
+    height: 70vh;
+    width: 35vw;
+    position: absolute;
+    right: 12vw;
+    top: 20vh;
+  }
+  .image2 {
+    height: 60vh;
+    width: 40vw;
+    margin-top: -8%;
+  }
+
+  .textCont3 {
+    right: 12%;
+    top: 16%;
+  }
+  .image3 {
+    height: 50vh;
+    width: 35vw;
+    right: 10vw;
+  }
+}
+@media screen and (max-width: 992px) {
+  .textCont {
+    width: 40vw;
   }
   .text {
     font-size: 40px;
   }
   .desc {
-    font-size: 24px;
+    font-size: 16px;
+  }
+  .input {
+    width: 60%;
+  }
+  .button {
+    width: 40%;
+  }
+  .inpB {
+    width: 55%;
+  }
+  .text2 {
+    font-size: 36px;
+  }
+
+  .desc2 {
+    font-size: 13px;
+  }
+
+  .textCont2 {
+    width: 36vw;
+  }
+  .image {
+    height: 60vh;
+    width: 30vw;
+    position: absolute;
+    right: 16vw;
+    top: 25vh;
+  }
+  .image2 {
+    position: absolute;
+    left: 5vw;
+    top: 25vh;
+    height: 60vh;
+    width: 45vw;
+  }
+
+  .textCont3 {
+    width: 30vw;
+    right: 16vw;
+    top: 20%;
+  }
+  .image3 {
+    height: 50vh;
+    width: 40vw;
+    right: 12vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .textCont {
+    width: 50vw;
+  }
+  .text {
+    font-size: 40px;
+  }
+  .desc {
+    font-size: 16px;
+  }
+  .input {
+    width: 60%;
+  }
+  .button {
+    width: 40%;
+  }
+  .inpB {
+    width: 80%;
+  }
+
+  .textCont2 {
+    margin: 0;
+    width: 100%;
+  }
+  .text2 {
+    text-align: center;
+    font-size: 36px;
+  }
+
+  .desc2 {
+    font-size: 16px;
+  }
+  .image3 {
+    height: 50vh;
+    width: 90%;
+    right: 16%;
+    top: 50%;
+  }
+
+  .image {
+    background-image: url(../assets/meeting1.png);
+    position: absolute;
+    top: 70vh;
+    left: 5vw;
+    height: 30vh;
+    width: 90%;
+  }
+  .not,
+  .ring,
+  .sched {
+    opacity: 0;
+  }
+  .container3 {
+    height: 125vh;
+    display: block;
+  }
+  .image2 {
+    background-image: url(../assets/smile.png);
+    position: absolute;
+    top: 55vh;
+    left: 5vw;
+    height: 60vh;
+    width: 90%;
+  }
+
+  .textCont3 {
+    width: 90%;
+    right: 5vw;
+    top: 0;
+  }
+  .container4 {
+    height: 125vh;
+    display: block;
+  }
+  .image3 {
+    background-image: url(/src/assets/glassg.png);
+    top: 50vh;
+    left: 5vw;
+    height: 60vh;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .textCont {
+    width: 90%;
+  }
+  .text {
+    font-size: 40px;
+  }
+  .desc {
+    font-size: 15px;
+  }
+  .input {
+    width: 60%;
+  }
+  .button {
+    width: 40%;
+  }
+  .inpB {
+    width: 90%;
+  }
+  .text2 {
+    font-size: 44px;
+    font-weight: bold;
+  }
+
+  .desc2 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .textCont2 {
+    width: 100%;
+    height: 80vh;
+  }
+  .image {
+    top: 55%;
+    left: -1vw;
+    width: 100%;
+    height: 36%;
+  }
+  .not,
+  .ring,
+  .sched {
+    opacity: 0;
+  }
+  .image2 {
+    height: 50vh;
+    width: 90%;
+  }
+  .image3 {
+    height: 50vh;
+    width: 90%;
+    right: 16%;
+    top: 50%;
   }
 }

@@ -42,7 +42,6 @@ export const Home = (props) => {
           </div>
         </Container>
       </div>
-
       <div
         className={style.container2}
         style={
@@ -128,7 +127,6 @@ export const Home = (props) => {
           </div>
         </Container>
       </div>
-
       <div
         className={style.section69}
         style={

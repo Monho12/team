@@ -15,25 +15,25 @@ export const Footer = () => {
             ))}
           </div>
           <div>
-            <div style={{ marginBottom: "4vh" }}>Use cases</div>
+            <p style={{ marginBottom: "4vh" }}>Use cases</p>
             {data.cases.map((props) => (
               <p>{props.name}</p>
             ))}
           </div>
           <div>
-            <div style={{ marginBottom: "4vh" }}>Explore</div>
+            <p style={{ marginBottom: "4vh" }}>Explore</p>
             {data.explore.map((props) => (
               <p>{props.name}</p>
             ))}
           </div>
           <div>
-            <div style={{ marginBottom: "4vh" }}>Resources</div>
+            <p style={{ marginBottom: "4vh" }}>Resources</p>
             {data.resources.map((props) => (
               <p>{props.name}</p>
             ))}
           </div>
-          <div>
-            <h5>Subscribe to our newsletter</h5>
+          <div className={style.sub}>
+            <div className={style.sText}>Subscribe to our newsletter</div>
             <input className={style.button} type="type" placeholder="Email" />
           </div>
         </div>

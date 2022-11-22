@@ -24,7 +24,8 @@ export const Home = (props) => {
 
   return (
     <div>
-      <div className={style.container}>
+      <div 
+      className={style.container}>
         <Container>
           <div className={style.textCont}>
             <div className={style.text}>{props.text}</div>
@@ -165,7 +166,8 @@ export const Home = (props) => {
           </div>
         </Container>
       </div>
-      <div className={style.btnCont}>
+      <div 
+      className={style.btnCont}>
         <div className={style.buttons}>
           <Button onClick={goLeft}>Left</Button>
           <Button onClick={goRight}>Right</Button>

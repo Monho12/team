@@ -41,8 +41,54 @@ p {
   color: #4da0fd;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1200px) {
+  p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .dotood {
+    width: 80vw;
+  }
+  p {
+    font-size: 10px;
+  }
+  .sText {
+    font-size: 15px;
+  }
   .button {
-    width: 40vw;
+    width: 19vw;
+    height: 5vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .dotood {
+    width: 80vw;
+  }
+  p {
+    font-size: 9px;
+  }
+  .sText {
+    font-size: 15px;
+  }
+  .button {
+    width: 19vw;
+    height: 5vh;
+  }
+}
+@media screen and (max-width: 576px) {
+  .dotood {
+    width: 50vh;
+  }
+  p {
+    font-size: 8px;
+  }
+  .sText {
+    font-size: 8px;
+    width: 5vh;
+  }
+  .button {
+    width: 12vw;
+    height: 3vh;
   }
 }

@@ -53,6 +53,7 @@
   position: relative;
   z-index: -100;
   width: 100vw;
+  transition: 500ms;
 }
 .text2 {
   font-size: 48px;
@@ -345,8 +346,8 @@
   .image2 {
     position: absolute;
     left: 5vw;
-    top: 25vh;
-    height: 60vh;
+    top: 30vh;
+    height: 45vh;
     width: 45vw;
   }
 
@@ -356,8 +357,9 @@
     top: 20%;
   }
   .image3 {
-    height: 50vh;
-    width: 40vw;
+    height: 45vh;
+    width: 45vw;
+    top: 30%;
     right: 12vw;
   }
 }
@@ -478,9 +480,9 @@
   }
   .image {
     top: 55%;
-    left: -1vw;
+    left: 0vw;
     width: 100%;
-    height: 36%;
+    height: 33%;
   }
   .not,
   .ring,

@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   background-color: #252b3b;
+  transition: 500ms;
   /* border: 1px solid red; */
 }
 

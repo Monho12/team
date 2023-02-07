@@ -26,11 +26,11 @@
 
 .input {
   min-width: 15vw;
-  height: 6vh;
+  height: 4.5vh;
 }
 .button {
   width: 9vw;
-  height: 6vh;
+  height: 4.5vh;
   align-items: center;
   border: none;
   background-color: #0bbef2;

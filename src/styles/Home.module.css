@@ -2,7 +2,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url(/src//assets//backG.jpg);
+  background-image: url(../assets/backG.svg);
   background-size: cover;
   background-repeat: no-repeat;
   min-width: 100vw;

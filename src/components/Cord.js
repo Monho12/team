@@ -1,6 +1,6 @@
 import styles from "../styles/Cord.module.css";
 import { useContext } from "react";
-import { ThemeContext } from "./ThemeProvider";
+import { ThemeContext } from "../context/ThemeProvider";
 
 export const Cord = (props) => {
   const { isDark, toggleTheme } = useContext(ThemeContext);

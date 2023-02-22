@@ -1,17 +1,18 @@
 import "./App.css";
 import { Header } from "./components/Header";
-import { Home } from "./components/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ThemeProvider } from "./context/ThemeProvider";
+import { Footer } from "./components/Footer";
+import { Products } from "./pages/Products";
+import { Services } from "./pages/Services";
+import { Contact } from "./pages/Contact";
+import { Getaccess } from "./pages/Getaccess";
+import { Login } from "./pages/Login";
+import { Home } from "./pages/Home";
 import image from "../src/assets/meeting.png";
 import img from "../src/assets/speed.jpeg";
 import img1 from "../src/assets/crowd.svg";
 import not from "../src/assets/not.png";
-import { ThemeProvider } from "./components/ThemeProvider";
-// import "bootstrap/dist/css/bootstrap.min.css";
-import { Footer } from "./components/Footer";
-import { Products } from "./components/Products";
-import { Services } from "./components/Services";
-import { Contact, Getaccess, Login } from "./components";
 
 const data = {
   img: image,
@@ -51,13 +52,13 @@ const data3 = {
   img: img,
   image: img1,
   text7: "Written by",
-  text8: "CEO Team App"
+  text8: "CEO Team App",
 };
 
 function App() {
   return (
-    <ThemeProvider>
-      <BrowserRouter>
+    <BrowserRouter>
+      <ThemeProvider>
         <Header />
         <Routes>
           <Route index element={<Home {...data} />} />
@@ -68,8 +69,8 @@ function App() {
           <Route path="/getaccess" element={<Getaccess />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
-    </ThemeProvider>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }
 

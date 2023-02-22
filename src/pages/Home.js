@@ -1,14 +1,14 @@
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "../context/ThemeProvider";
+import { useContext, useState } from "react";
+import { Review } from "../components/Review";
 import style from "../styles/Home.module.css";
-import { ThemeContext } from "./ThemeProvider";
-import { useContext, useEffect, useState } from "react";
-import backs from "./feedbacks.json";
-import { Review } from "./Review";
+import backs from "../components/json/feedbacks.json";
 import img from "../assets/unknown.png";
 
 export const Home = (props) => {
-  const { isDark, toggleTheme } = useContext(ThemeContext);
+  const { isDark } = useContext(ThemeContext);
   const [index, setIndex] = useState(0);
 
   const goRight = () => {
@@ -24,8 +24,7 @@ export const Home = (props) => {
 
   return (
     <div>
-      <div 
-      className={style.container}>
+      <div className={style.container}>
         <Container>
           <div className={style.textCont}>
             <div className={style.text}>{props.text}</div>
@@ -166,8 +165,7 @@ export const Home = (props) => {
           </div>
         </Container>
       </div>
-      <div 
-      className={style.btnCont}>
+      <div className={style.btnCont}>
         <div className={style.buttons}>
           <Button onClick={goLeft}>Left</Button>
           <Button onClick={goRight}>Right</Button>

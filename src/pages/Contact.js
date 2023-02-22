@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
 import style from "../styles/Contact.module.css";
 import { useContext } from "react";
-import { ThemeContext } from "./ThemeProvider";
+import { ThemeContext } from "../context/ThemeProvider";
 
 export const Contact = () => {
   const { isDark } = useContext(ThemeContext);

@@ -1,6 +1,6 @@
 import { Container, Button } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
-import { ThemeContext } from "./ThemeProvider";
+import { ThemeContext } from "../context/ThemeProvider";
 import style from "../styles/Header.module.css";
 import { useContext, useState } from "react";
 

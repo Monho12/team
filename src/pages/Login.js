@@ -1,9 +1,9 @@
 import { Container } from "react-bootstrap";
-import style from "../styles/Getaccess.module.css";
+import style from "../styles/Login.module.css";
 import { useContext } from "react";
-import { ThemeContext } from "./ThemeProvider";
+import { ThemeContext } from "../context/ThemeProvider";
 
-export const Getaccess = () => {
+export const Login = () => {
   const { isDark } = useContext(ThemeContext);
   return (
     <div
@@ -15,7 +15,7 @@ export const Getaccess = () => {
           className={style.text}
           style={{ color: isDark ? "white" : "black" }}
         >
-          Get Access
+          Log In
         </div>
       </Container>
     </div>

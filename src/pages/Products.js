@@ -1,11 +1,11 @@
 import { Container, Spinner } from "react-bootstrap";
-import { Cord } from "./Cord";
+import { Cord } from "../components/Cord";
 import { Button } from "react-bootstrap";
-import axios from "axios";
-import style from "../styles/Products.module.css";
 import { useState, useEffect } from "react";
 import { useContext } from "react";
-import { ThemeContext } from "./ThemeProvider";
+import { ThemeContext } from "../context/ThemeProvider";
+import axios from "axios";
+import style from "../styles/Products.module.css";
 
 export const Products = (props) => {
   const { isDark } = useContext(ThemeContext);

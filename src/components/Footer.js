@@ -1,9 +1,8 @@
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import style from "../styles/Footer.module.css";
-import data from "./footerData.json";
+import data from "./json/footerData.json";
 
 export const Footer = () => {
-  console.log(data);
   return (
     <div className={style.container}>
       <Container>

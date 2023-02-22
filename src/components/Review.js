@@ -1,7 +1,7 @@
 import styles from "../styles/Review.module.css";
 import { FaStar } from "react-icons/fa";
 import { useContext } from "react";
-import { ThemeContext } from "./ThemeProvider";
+import { ThemeContext } from "../context/ThemeProvider";
 
 export const Review = (props) => {
   const { isDark, toggleTheme } = useContext(ThemeContext);

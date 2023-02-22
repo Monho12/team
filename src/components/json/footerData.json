@@ -1,12 +1,11 @@
 {
   "links": [
     {
-      "name": "instagram",
-      "image": "Facebook.png"
+      "name": "instagram"
+      
     },
     {
-      "name": "Facebook",
-      "image": ""
+      "name": "Facebook"
     },
     {
       "name": "Twitter",
